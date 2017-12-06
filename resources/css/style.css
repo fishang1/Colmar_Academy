@@ -3,7 +3,7 @@
 html {
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #4a4a4a;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -14,6 +14,11 @@ a {
   transition: color 150ms linear;
 }
 
+p {
+  margin-top: 1.5rem;
+  line-height: 1.5rem;
+}
+
 h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -22,10 +27,11 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  font-weight: 400;
 }
 
-h1, h2, h3, p {
-  margin-top: 24px;
+h1, h2, h3 {
+  margin-top: 1.5rem;
   line-height: 1.15;
 }
 
@@ -35,8 +41,15 @@ h1, h2, h3, p {
   justify-content: center;
 }
 
-.full-width {
-  padding: 2rem 1.5rem;
+.container-outer {
+  align-items: center;
+}
+
+.container-inner {
+  margin: 2rem 1.5rem;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
 }
 
 .button {
@@ -52,6 +65,10 @@ h1, h2, h3, p {
 
 .button:hover {
   background-color: #9B9B9B;
+}
+
+.condensed {
+  display: none;
 }
 
 /* Nav Styles */
@@ -74,6 +91,7 @@ h1, h2, h3, p {
 
 .colmar-logo-wordmark{
   font-size: 1.3rem;
+  text-transform: uppercase;
 }
 
 .colmar-logo-wordmark span:first-child {
@@ -82,13 +100,14 @@ h1, h2, h3, p {
 }
 
 .colmar-logo-wordmark span:last-child {
-  margin-left: -0.15rem;
+  margin-left: -0.25rem;
   color: #9b9b9b;
 }
 
 .nav-item {
   margin-right: 1rem;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
 }
 
 .nav-item:last-child {
@@ -107,21 +126,104 @@ h1, h2, h3, p {
 
 #colmar-header {
   background-color: #D8D8D8;
-  height: 32rem;
-  justify-content: flex-start;
   margin-top: 64px;
+}
+
+#colmar-header .container-inner{
+  justify-content: flex-start;
 }
 
 .header-image {
   width: 60%;
-  height: 100%;
-  background-image: url("../img/banner.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: auto;
 }
 
 .header-text {
   width: 30%;
   margin-left: 3rem;
+}
+
+
+/* News Section Styles */
+
+#colmar-news {
+  background-color: #F3F5F5;
+}
+
+#colmar-news .container-inner {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.news-featured-story {
+  flex-direction: column;
+  width: 60%;
+}
+
+.news-featured-story-image {
+  width: 100%;
+  height: auto;
+}
+
+.news-featured-story-headline {
+  margin-top: 2rem;
+}
+
+.news-featured-story-author {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  color: black;
+}
+
+.news-secondary-stories {
+  margin-left: 1.5rem;
+  border-left: 1px solid #E1E3E3;
+  width: 40%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.news-secondary-story {
+  width: 100%;
+  justify-content: flex-start;
+  padding: 1rem;
+  transition: background-color 150ms linear;
+}
+
+.news-secondary-story:nth-child(2) {
+  border-top: 1px solid #E1E3E3;
+  border-bottom: 1px solid #E1E3E3;
+}
+
+.news-secondary-story:hover {
+  background-color: #D8D8D8;
+}
+
+.news-secondary-story-image {
+  width: 35%;
+  height: auto;
+}
+
+.news-secondary-story-text {
+  margin-left: 1.5rem;
+}
+
+.news-secondary-story-text h2 {
+  margin-top: 0;
+}
+
+.news-secondary-story-text p {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.news-secondary-story-text a {
+  color: #5093DF;
+}
+
+.news-secondary-story-text a:hover {
+  color: #0000FF;
 }
