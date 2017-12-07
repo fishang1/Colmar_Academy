@@ -14,6 +14,10 @@ a {
   transition: color 150ms linear;
 }
 
+a:visited {
+  color: inherit;
+}
+
 p {
   margin-top: 1.5rem;
   line-height: 1.5rem;
@@ -30,7 +34,11 @@ h2 {
   font-weight: 400;
 }
 
-h1, h2, h3 {
+h3 {
+  text-transform: uppercase;
+}
+
+h1, h2, h3, h4 {
   margin-top: 1.5rem;
   line-height: 1.15;
 }
@@ -226,4 +234,65 @@ h1, h2, h3 {
 
 .news-secondary-story-text a:hover {
   color: #0000FF;
+}
+
+
+/* Courses Section Styles */
+
+#colmar-courses {
+  background-color: #EAEBEC;
+}
+
+#colmar-courses .container-inner {
+  margin: 2rem 4.5rem;
+  flex-direction: column;
+}
+
+.courses-listings {
+  width: 100%;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.courses-listings a {
+  width: 30%;
+  display: flex;
+}
+
+.courses-listing {
+  margin: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  height: auto;
+}
+
+.courses-listing-image {
+  width: 100%;
+  height: auto;
+}
+
+.courses-listing-text {
+  background-color: white;
+  padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+  transition: background-color 150ms linear;
+  height: 100%;
+}
+
+.courses-listing:hover > .courses-listing-text {
+  background-color: #DDDDDD;
+}
+
+.courses-listing-text h2 {
+  margin-top: 0;
+}
+
+.courses-listing-text p {
+  margin-top: 0.5rem;
+}
+
+.courses-listing-text h3, .courses-listing-text p {
+  color: #A7A7A7;
 }
