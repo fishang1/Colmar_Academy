@@ -171,6 +171,7 @@ h1, h2, h3, h4 {
 .news-featured-story-image {
   width: 100%;
   height: auto;
+  margin-top: 1rem;
 }
 
 .news-featured-story-headline {
@@ -200,11 +201,11 @@ h1, h2, h3, h4 {
   justify-content: flex-start;
   padding: 1rem;
   transition: background-color 150ms linear;
+  border-bottom: 1px solid #E1E3E3;
 }
 
-.news-secondary-story:nth-child(2) {
-  border-top: 1px solid #E1E3E3;
-  border-bottom: 1px solid #E1E3E3;
+.news-secondary-story:last-child {
+  border-bottom: none;
 }
 
 .news-secondary-story:hover {
@@ -265,7 +266,6 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: center;
   height: auto;
 }
 
@@ -295,4 +295,71 @@ h1, h2, h3, h4 {
 
 .courses-listing-text h3, .courses-listing-text p {
   color: #A7A7A7;
+}
+
+
+/* Thesis Exhibit Section Styles */
+
+#colmar-thesis {
+  background-color: #F3F5F5;
+}
+
+#colmar-thesis .container-inner {
+  flex-direction: column;
+}
+
+.thesis-exhibit {
+  margin-top: 3rem;
+  align-items: flex-start;
+}
+
+/* Footer Section Styles */
+
+#colmar-footer {
+  background-color: #F3F5F5;
+  border-top: 1px solid #E1E3E3;
+  font-family: Arial, sans-serif;
+}
+
+#colmar-footer .container-inner {
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 1rem 1.5rem 3rem 1.5rem;
+}
+
+.container-inner span {
+  margin-left: 1rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 500px) {
+
+  .full {
+    display: none;
+  }
+
+  .condensed {
+    display: block;
+  }
+
+  .container-inner {
+    margin: 2rem 1.5rem;
+  }
+
+  /* Header */
+
+  #colmar-header .container-inner {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .header-image {
+    width: 100%;
+  }
+
+  .header-text {
+    width: auto;
+    margin: 2rem 1rem;
+  }
 }
