@@ -333,7 +333,61 @@ h1, h2, h3, h4 {
 
 /* Media Queries */
 
+@media screen and (max-width: 968px) {
+
+  /* Courses */
+
+  #colmar-courses {
+    background-color: #F3F5F5;
+    border-top:  1px solid #E1E3E3;
+  }
+
+  #colmar-courses .container-inner {
+    margin: 2rem 1rem;
+    flex-direction: column;
+  }
+
+  #colmar-courses .full {
+    display: none;
+  }
+
+  .courses-listings {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .courses-listings a {
+    width: 100%;
+  }
+
+  .courses-listing {
+    width: 100%;
+    margin: 0.5rem 0 0 0;
+  }
+
+  .courses-listing-text {
+    padding: 2rem;
+    background-color: #D8D8D8;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  /* Navigation */
+
+  #colmar-navigation .full {
+    display: none;
+  }
+
+  .nav-items-condensed {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+}
+
 @media screen and (max-width: 500px) {
+  /* Global */
 
   .full {
     display: none;
@@ -344,7 +398,11 @@ h1, h2, h3, h4 {
   }
 
   .container-inner {
-    margin: 2rem 1.5rem;
+    margin: 2rem 1rem;
+  }
+
+  .nav-items-condensed {
+    display: flex;
   }
 
   /* Header */
@@ -362,4 +420,62 @@ h1, h2, h3, h4 {
     width: auto;
     margin: 2rem 1rem;
   }
+
+  /* News */
+
+  .news-secondary-stories {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  .news-secondary-story {
+    flex-direction: column;
+    border: none;
+    padding: 0;
+  }
+
+  .news-secondary-story-image {
+    width: 100%;
+  }
+
+  .news-secondary-story-text {
+    margin: 2rem 0;
+    width: 100%;
+  }
+
+  /* Thesis Exhibit */
+
+  #colmar-thesis {
+    border-top:  1px solid #E1E3E3;
+  }
+
+  #colmar-thesis .container-inner {
+    margin: 0;
+  }
+
+  #colmar-thesis .news-featured-story {
+    width: 100%;
+  }
+
+  .news-featured-story-image {
+    margin-top: 0;
+  }
+
+  .thesis-exhibit {
+    margin-top: 2rem;
+  }
+
+  /* Footer */
+
+  #colmar-footer {
+    margin-top: 1.5rem;
+  }
+
+  #colmar-footer .container-inner {
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+  }
+
 }
